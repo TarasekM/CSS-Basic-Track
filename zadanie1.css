@@ -1,0 +1,28 @@
+#first_h1_tag{
+  color:magenta;
+  font-family: sans-serif;
+}
+
+#second-li code {
+  color:green;
+}
+
+
+code {
+  color: red;
+  font-family: monospace;
+}
+
+body{
+  font-family: 'Indie Flower', cursive;
+}
+
+li ~ li{
+  background: black;
+  color: white;
+}
+
+ol > li {
+  background: black;
+  color: white;
+}
