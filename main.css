@@ -1,3 +1,7 @@
+body {
+  font-family: 'Playfair Display', serif;
+}
+
 #section-one{
   background: red;
 }
@@ -8,11 +12,14 @@ section.styl1
   font-weight: bold;
 }
 
-h1{
+#section-one h1{
   color: white;
-  font-family: 'Playfair Display', serif;
 }
 
 .section-title{
   color: #2ddf5c;
+}
+
+div > p{
+  background: gray;
 }
