@@ -45,3 +45,32 @@ div > p{
   background: #2ddf5c;
   padding: 10px 5px;
 }
+
+.main-header > div{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.main-nav{
+  display: inline-block;
+    text-align: right;
+    width: calc(100% - 90px);
+    vertical-align: middle;
+}
+
+.main-nav__item{
+  display: inline-block;
+}
+
+.main-nav__items{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-div__a{
+  color: #0e4f1f;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 25px;
+}
