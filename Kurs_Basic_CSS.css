@@ -51,15 +51,18 @@ div > p{
   vertical-align: middle;
 }
 
+.main-div__a{
+  color: #0e4f1f;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 25px;
+}
+
 .main-nav{
   display: inline-block;
     text-align: right;
     width: calc(100% - 90px);
     vertical-align: middle;
-}
-
-.main-nav__item{
-  display: inline-block;
 }
 
 .main-nav__items{
@@ -68,9 +71,19 @@ div > p{
   list-style: none;
 }
 
-.main-div__a{
-  color: #0e4f1f;
+.main-nav__item{
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.main-nav__item a{
   text-decoration: none;
-  font-weight: bold;
-  font-size: 25px;
+  color: #0e4f1f;
+}
+
+.main-nav__item a:hover{
+  color: yellow;
+}
+.main-nav__item a:active{
+  color: white;
 }
