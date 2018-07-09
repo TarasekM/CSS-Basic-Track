@@ -15,6 +15,12 @@
   text-align: center;
 }
 
+.gain-list{
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
 .gain{
   background: #d0f4ce;
   text-align: center;

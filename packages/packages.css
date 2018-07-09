@@ -1,0 +1,64 @@
+.main-package{
+  border: 5px solid #0c4422;
+  border-left: 0px;
+  margin: 32px 0;
+  width: 60%;
+}
+
+.main-package__link{
+  text-decoration: none;
+  padding: 32px;
+  display: block;
+}
+
+#popular{
+  background: #88ff99;
+}
+
+#free{
+  background: #d0f4ce;
+  float: right;
+  border-right: 0;
+  border-left: 5px solid #0c4422;
+  text-align: right;
+}
+
+#free:hover{
+  border-color: red;
+}
+
+#premium{
+  background: #0c4422;
+}
+
+.main-package__title{
+  color: black;
+}
+
+.main-package__subtitle{
+  color: rgb(130,130,130);
+}
+
+#premium .main-package__title{
+  color: white;
+}
+
+#premium .main-package__subtitle{
+  color: rgb(188,188,188);
+}
+
+.main-package__h2{
+  color: grey;
+}
+
+.main-package__description{
+  border: 2px solid #0c4422;
+  background: white;
+  color: #0c4422;
+  padding: 16px;
+}
+
+.main-package:hover{
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+  border-color: red;
+}
