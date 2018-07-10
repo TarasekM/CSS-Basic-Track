@@ -1,9 +1,9 @@
 #section-one{
-  background: url(https://images3.alphacoders.com/651/651258.jpg);
+  background: url(https://images3.alphacoders.com/651/651258.jpg)
+  left 10% top 20%/cover no-repeat border-box;
   padding: 10px;
-  border: 5px blue solid;
-  margin-top: 53px;
-  height: 200px;
+  margin-top: 51px;
+  height: 333px;
   width: 100%;
   position: relative;
 }

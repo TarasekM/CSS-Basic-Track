@@ -14,13 +14,13 @@ body {
 .background{
   background: url("images/freedom.jpg");
   background-size: cover;
-  background-position: center 50% 50%;
   width: 100%;
   height: 100%;
   position: fixed;
   z-index: -1;
   top: 0;
   left: 0;
+
 }
 
 .main-header{
@@ -43,6 +43,13 @@ body {
   text-decoration: none;
   font-weight: bold;
   font-size: 25px;
+
+  height: 30px;
+  display: inline-block;
+}
+
+.main-div__a img{
+  height: 100%;
 }
 
 .main-nav{
