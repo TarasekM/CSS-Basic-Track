@@ -11,8 +11,9 @@
 #section-one h1{
   color: whitesmoke;
   position: absolute;
-  bottom: 0px;
-  left: 20px;
+  width: 100%;
+  text-align: center;
+  top: 0;
 }
 
 .section-title{
