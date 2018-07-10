@@ -1,11 +1,18 @@
 #section-one{
-  background: url(DolnyPanel.png);
+  background: url(https://images3.alphacoders.com/651/651258.jpg);
   padding: 10px;
   border: 5px blue solid;
+  margin-top: 53px;
+  height: 200px;
+  width: 100%;
+  position: relative;
 }
 
 #section-one h1{
-  color: white;
+  color: whitesmoke;
+  position: absolute;
+  bottom: 0px;
+  left: 20px;
 }
 
 .section-title{
