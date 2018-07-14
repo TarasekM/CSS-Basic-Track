@@ -33,7 +33,7 @@ body {
   left: 0;
   background: linear-gradient(to bottom,
     #22c222 2%,#2ddf5c,#22c222 98%);
-  padding: 10px 5px;
+  padding: 1rem 0.5rem;
   z-index: 5;
 }
 
@@ -46,9 +46,9 @@ body {
   color: #0e4f1f;
   text-decoration: none;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 1.5rem;
 
-  height: 30px;
+  height: 2rem;
   display: inline-block;
 }
 
@@ -71,14 +71,14 @@ body {
 
 .main-nav__item{
   display: inline-block;
-  margin: 0 20px;
+  margin: 0 1.2rem;
 }
 
 .main-nav__item a{
   text-decoration: none;
   color: #0e4f1f;
   font-weight: bold;
-  padding: 3px 0;
+  padding: 0.2rem 0;
 }
 
 .main-nav__item a:hover{
@@ -93,7 +93,7 @@ body {
 .main-nav__item--cta a{
   color: whitesmoke;
   background: #ff1b68;
-  padding: 8px 16px;
+  padding: 0.5rem 1rem;
   border-radius: 8px;
 }
 
@@ -116,7 +116,7 @@ body {
   background: #0e4f1f;
   font: inherit;
   border: 2px solid #0e4f1f;
-  padding: 5px;
+  padding: 0.3rem;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -137,7 +137,7 @@ body {
 
 .main-footer{
   background: black;
-  padding: 32px;
+  padding: 2rem;
 }
 
 .main-footer__links{
@@ -149,7 +149,7 @@ body {
 
 .main-footer_link{
   display: inline-block;
-  margin: 0 16px;
+  margin: 0 1rem;
 }
 
 .main-footer_link a{
