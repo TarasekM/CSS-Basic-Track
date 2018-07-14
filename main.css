@@ -1,8 +1,8 @@
 #section-one{
-  background: url(https://images3.alphacoders.com/651/651258.jpg)
-  left 10% top 20%/cover no-repeat border-box;
-  padding: 10px;
-  margin-top: 51px;
+  background: linear-gradient(to top,rgba(80,68,18,0.6) 10%,transparent),
+  url(https://images3.alphacoders.com/651/651258.jpg)
+  left 10% top 6%/cover no-repeat border-box;
+  margin-top: 54px;
   height: 333px;
   width: 100%;
   position: relative;
@@ -104,6 +104,8 @@
   display: inline-block;
   width: 30%;
   vertical-align: top;
+  position: relative;
+  z-index: 2;
 }
 
 .key-feature__image{
@@ -113,6 +115,7 @@
     border: 2px solid darkgrey;
     border-radius: 50%;
     margin: 0 auto;
+
 }
 
 .key-feature__description{
