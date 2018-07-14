@@ -1,7 +1,7 @@
 .main-package{
   border: 5px solid #0c4422;
   border-left: 0px;
-  margin: 64px 0;
+  margin: 4rem 0;
   width: 60%;
   position: relative;
   border-radius: 0 8px 8px 0;
@@ -9,7 +9,7 @@
 
 .main-package__link{
   text-decoration: none;
-  padding: 32px;
+  padding: 2rem;
   display: block;
 }
 
@@ -45,13 +45,13 @@
 .main-package__badge{
   position: absolute;
   top: 0;
-  right: 18px;
+  right: 1.1rem;
   color: rgba(12,68,34,0.95);
   background: whitesmoke;
-  padding: 8px;
+  padding: 0.5rem;
   border-radius: 8px;
   box-shadow: 4px 4px rgb(188,188,188,0.5);
-  font-size: 22px;
+  font-size: 1.3rem;
 }
 
 #premium .main-package__title{
@@ -70,7 +70,7 @@
   border: 2px solid #0c4422;
   background: white;
   color: #0c4422;
-  padding: 16px;
+  padding: 1rem;
 }
 
 .main-package:hover{

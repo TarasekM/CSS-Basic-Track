@@ -2,7 +2,7 @@
   background: linear-gradient(to top,rgba(80,68,18,0.6) 10%,transparent),
   url(https://images3.alphacoders.com/651/651258.jpg)
   left 10% top 6%/cover no-repeat border-box;
-  margin-top: 54px;
+  margin-top: 3.4rem;
   height: 333px;
   width: 100%;
   position: relative;
@@ -19,7 +19,7 @@
 .section-title{
   color: #2ddf5c;
   margin: 0;
-  padding: 10px;
+  padding: 0.6rem;
   text-align: center;
 }
 
@@ -33,8 +33,8 @@
   background: #d0f4ce;
   text-align: center;
   font-family: 'Merriweather', serif;
-  margin: 8px;
-  padding: 16px;
+  margin: 0.5rem;
+  padding: 1rem;
   width: 30%;
   display: inline-block;
   vertical-align: middle;
@@ -80,7 +80,7 @@
   padding: 0;
 }
 .gain__feature{
-  padding: 8px 0;
+  padding: 0.5rem 0;
 }
 
 #key-features{
@@ -89,8 +89,8 @@
 
 #key-features .section-title{
   color: whitesmoke;
-  margin-top: 50px;
-  padding: 15px;
+  margin-top: 4rem;
+  padding: 1rem;
 }
 
 .key-features__list{
@@ -110,8 +110,8 @@
 
 .key-feature__image{
     background: #ffcede;
-    width: 128px;
-    height: 128px;
+    width: 8rem;
+    height: 8rem;
     border: 2px solid darkgrey;
     border-radius: 50%;
     margin: 0 auto;
@@ -120,8 +120,8 @@
 
 .key-feature__description{
   color: white;
-  padding: 30px;
+  padding: 3rem;
   font-weight: bold;
   text-align: center;
-  font-size: 20px;
+  font-size: 1.2rem;
 }
