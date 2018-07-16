@@ -7,23 +7,34 @@
 body {
   font-family: 'Playfair Display', serif;
   margin: 0;
+  overflow-x: hidden;
 }
 
 
 /* Header design*/
 
 
+.backdrop {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+}
+
 .background{
   background: url("images/freedom.jpg");
   background-size: cover;
   filter: grayscale(30%);
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   position: fixed;
   z-index: -1;
   top: 0;
   left: 0;
-
 }
 
 .main-header{
@@ -42,6 +53,29 @@ body {
   vertical-align: middle;
 }
 
+.toggle-button {
+  width: 3rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding-top: 0;
+  padding-bottom: 0;
+  vertical-align: middle;
+}
+
+.toggle-button:focus {
+  outline: none;
+}
+
+.toggle-button__bar {
+  width: 100%;
+  height: 0.2rem;
+  background: #22aa22;
+  box-shadow: 1px 1px 1px  #226622;
+  display: block;
+  margin: 0.6rem 0;
+}
+
 .main-div__a{
   color: #0e4f1f;
   text-decoration: none;
@@ -50,6 +84,7 @@ body {
 
   height: 2rem;
   display: inline-block;
+  vertical-align: middle;
 }
 
 .main-div__a img{
@@ -59,7 +94,7 @@ body {
 .main-nav{
   display: inline-block;
   text-align: right;
-  width: calc(100% - 90px);
+  width: calc(100% - 6rem);
   vertical-align: middle;
 }
 
@@ -74,7 +109,8 @@ body {
   margin: 0 1.2rem;
 }
 
-.main-nav__item a{
+.main-nav__item a,
+.mobile-nav__item a{
   text-decoration: none;
   color: #0e4f1f;
   font-weight: bold;
@@ -90,21 +126,56 @@ body {
   border-bottom: 2px solid white;
 }
 
-.main-nav__item--cta a{
+.main-nav__item--cta a,
+.mobile-nav__item--cta a{
   color: whitesmoke;
   background: #ff1b68;
   padding: 0.5rem 1rem;
   border-radius: 8px;
 }
 
-.main-nav__item--cta a:hover{
+.main-nav__item--cta a:hover,
+.mobile-nav__item--cta a:hover{
   color: #ff1b68;
   background: yellow;
 }
 
-.main-nav__item--cta a:active{
+.main-nav__item--cta a:active,
+.mobile-nav__item--cta a:active{
   color: grey;
   background: white;
+}
+
+
+/* Mobile navigation bar */
+
+
+.mobile-nav {
+  display: none;
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  left: 0;
+  background: white;
+  width: 80%;
+  height: 100vh;
+}
+
+.mobile-nav__items {
+  width: 90%;
+  height: 100%;
+  list-style: none;
+  margin: 10% auto;
+  padding: 0;
+  text-align: center;
+}
+
+.mobile-nav__item {
+  margin: 1rem 0;
+}
+
+.mobile-nav__item a {
+  font-size: 1.5rem;
 }
 
 
@@ -160,4 +231,11 @@ body {
 .main-footer_link a:hover,
 .main-footer_link a:active{
   color: #ccc;
+}
+
+
+/* Open / Close */
+
+.open{
+  display: block !important;
 }
