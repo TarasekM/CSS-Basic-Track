@@ -3,7 +3,7 @@
   url(https://images3.alphacoders.com/651/651258.jpg)
   left 10% top 20%/cover no-repeat border-box;
   margin-top: 3.4rem;
-  height: 50vh;
+  height: 30vh;
   width: 100vw;
   position: relative;
 
@@ -15,6 +15,7 @@
   width: 100%;
   text-align: center;
   top: 0;
+  font-size: 1.6rem;
 }
 
 .section-title{
@@ -24,21 +25,19 @@
   text-align: center;
 }
 
-.gain-list{
+/* .gain-list{
   width: 90%;
   margin: auto;
   text-align: center;
-}
+} */
 
 .gain{
   background: #d0f4ce;
   text-align: center;
   font-family: 'Merriweather', serif;
-  margin: 0.5rem;
+  margin: 4rem auto;
   padding: 1rem;
-  width: 18.75rem;
-  display: inline-block;
-  vertical-align: middle;
+  width: 18rem;
   box-shadow: 3px 2px 2px 2px rgba(0,0,0,0.5);
 }
 
@@ -92,6 +91,7 @@
   color: whitesmoke;
   margin-top: 4rem;
   padding: 1rem;
+
 }
 
 .key-features__list{
@@ -99,24 +99,16 @@
   margin: 0;
   padding: 0;
   text-align: center;
-}
 
-.key-feature{
-  display: inline-block;
-  width: 30%;
-  vertical-align: top;
-  position: relative;
-  z-index: 2;
 }
 
 .key-feature__image{
-    background: #ffcede;
-    width: 8rem;
-    height: 8rem;
-    border: 2px solid darkgrey;
-    border-radius: 50%;
-    margin: 0 auto;
-
+  background: #ffcede;
+  width: 8rem;
+  height: 8rem;
+  border: 2px solid darkgrey;
+  border-radius: 50%;
+  margin: 0 auto;
 }
 
 .key-feature__description{
@@ -125,6 +117,7 @@
   font-weight: bold;
   text-align: center;
   font-size: 1.2rem;
+  margin: 0;
 }
 
 .modal {
@@ -174,4 +167,47 @@
 .modal__action--negative:active {
   background: #ff5454;
   border-color: #ff5454;
+}
+
+@media(min-width: 40rem) and (min-height: 50rem){
+  #section-one{
+    height: 60vh;
+    background-position: 50% 24%;
+  }
+
+  #section-one h1{
+    font-size: 3rem;
+  }
+
+  .key-feature{
+    display: inline-block;
+    width: 30%;
+    max-width: 25rem;
+    vertical-align: top;
+    position: relative;
+    z-index: 2;
+  }
+
+  .key-feature__description{
+    color: white;
+    padding: 3rem;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+}
+
+
+@media(min-width: 69rem){
+  .gain{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 1rem;
+  }
+
+  .gain-list{
+    width: 90%;
+    margin: 4rem auto;
+    text-align: center;
+  }
 }

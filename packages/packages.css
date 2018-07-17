@@ -2,7 +2,7 @@
   border: 5px solid #0c4422;
   border-left: 0px;
   margin: 6rem 0;
-  width: 70vw;
+  width: 80vw;
   position: relative;
   border-radius: 0 8px 8px 0;
 }
@@ -45,13 +45,13 @@
 .main-package__badge{
   position: absolute;
   top: 0;
-  right: 1.1rem;
+  right: 1rem;
   color: rgba(12,68,34,0.95);
   background: whitesmoke;
   padding: 0.5rem;
   border-radius: 8px;
   box-shadow: 4px 4px rgb(188,188,188,0.5);
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 #premium .main-package__title{
