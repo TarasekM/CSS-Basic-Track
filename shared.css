@@ -9,6 +9,12 @@ body {
   overflow-x: hidden;
 }
 
+main{
+  margin-top: 6rem;
+  min-height: calc(100vh - 2rem - 8rem);
+  /* Ażeby footer nie spierdalał */
+}
+
 
 /* Header design*/
 
@@ -82,7 +88,7 @@ body {
   color: #0e4f1f;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
   height: 2rem;
   display: inline-block;
   vertical-align: middle;
