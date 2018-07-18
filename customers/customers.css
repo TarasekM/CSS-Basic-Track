@@ -19,6 +19,8 @@
     vertical-align: middle;
     background: rgba(50,50,50,0.7);
     width: 30%;
+    min-width: 270px;
+    max-width: 540px;
   }
 
   .testimonial__image-container{
@@ -27,7 +29,7 @@
     width: 65%;
     max-width: 540px;
     min-width: 270px;
-    box-shadow: 3px 3px 3px 5px rgba(0,0,0,0.3)
+    /* box-shadow: 3px 3px 3px 5px rgba(0,0,0,0.3) */
   }
 
   .testimonial__image{
