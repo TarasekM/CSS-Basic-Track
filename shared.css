@@ -1,17 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
 * {
   box-sizing: border-box;
 }
 
 
 body {
+  height: 100vh;
   font-family: 'Playfair Display', serif;
   margin: 0;
   overflow-x: hidden;
+  display: grid;
+  grid-template-rows: 4rem auto fit-content(5rem);
+  grid-template-areas:"header"
+                      "main"
+                      "footer";
 }
 
 main{
-  margin-top: 6rem;
-  min-height: calc(100vh - 2rem - 8rem);
+  grid-area: main;
   /* Ażeby footer nie spierdalał */
 }
 
@@ -51,11 +58,9 @@ main{
     #22c222 2%,#2ddf5c,#22c222 98%);
   padding: 1rem 0.5rem;
   z-index: 5;
-}
-
-.main-header > div{
-  display: inline-block;
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .toggle-button {
@@ -89,30 +94,25 @@ main{
   text-decoration: none;
   font-weight: bold;
   /* font-size: 1.5rem; */
-  height: 2rem;
-  display: inline-block;
-  vertical-align: middle;
 }
 
 .main-div__a img{
-  height: 100%;
+  height: 2rem;
+  vertical-align: middle;
 }
 
 .main-nav{
   display: none;
-  text-align: right;
-  width: calc(100% - 6rem);
-  vertical-align: middle;
 }
 
 .main-nav__items{
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
 }
 
 .main-nav__item{
-  display: inline-block;
   margin: 0 1.2rem;
 }
 
@@ -164,17 +164,22 @@ main{
   top: 0;
   right: 0;
   background: white;
-  width: 80%;
-  height: 30vh;
+  width: 70%;
+  height: 100vh;
 }
 
 .mobile-nav__items {
   width: 90%;
   height: 100%;
   list-style: none;
-  margin: 10% auto;
+  margin: 0% auto;
   padding: 0;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+
 }
 
 .mobile-nav__item {
@@ -197,6 +202,7 @@ main{
   padding: 0.3rem;
   border-radius: 5px;
   cursor: pointer;
+  font-weight: 500;
 }
 
 .button:hover{
@@ -209,6 +215,13 @@ main{
   outline: none;
 }
 
+.button[disabled]{
+  color: darkgrey;
+  cursor: not-allowed;
+  border: rgb(155, 153, 158);
+  background: #ccc;
+
+}
 
 /* Footer design*/
 
@@ -216,18 +229,20 @@ main{
 .main-footer{
   background: black;
   padding: 2rem;
+  grid-area: footer;
 }
 
 .main-footer__links{
   list-style: none;
   margin: 0;
   padding: 0;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main-footer_link{
-  /* display: inline-block; */
-  margin: 0 1rem;
+  margin: 0.2rem 1rem;
 }
 
 .main-footer_link a{
@@ -248,6 +263,8 @@ main{
 
 .open{
   display: block !important;
+  opacity: 1 !important;
+  transform: translateY(0) !important;
 }
 
 
@@ -258,18 +275,19 @@ main{
 
 @media(min-width: 33rem){
   .main-nav{
-    display: inline-block;
-    text-align: right;
-    width: calc(100% - 4rem);
-    vertical-align: middle;
+    display: flex;
   }
 
   .toggle-button {
     display: none;
   }
 
-  .main-footer_link{
-    display: inline-block;
+  .main-footer__link{
     margin: 0 1rem;
+  }
+
+  .main-footer__links{
+    flex-direction: row;
+    justify-content: center;
   }
 }

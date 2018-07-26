@@ -8,14 +8,11 @@
   <link rel="stylesheet" href="../shared.css">
   <link rel="stylesheet" href="start-hosting.css">
   <link rel="shortcut icon" href="../images/dollars.png">
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
 </head>
 
 <body>
 
   <div class="backdrop"></div>
-  <div class="background"></div>
 
   <header class="main-header">
     <div>
@@ -60,7 +57,7 @@
   <main class="signup-page">
       <h1 class="signup-title">Awesome! Let's dive right in!</h1>
       <form action="index.html" class="signup-form">
-        <label for="title">Title</label>
+        <label for="title">Title:</label>
         <select id="title">
           <option value="mr">Mr.</option>
           <option value="ms">Ms.</option>
@@ -69,14 +66,16 @@
         <input type="text" id="first-name">
         <label for="last-name">Last name:</label>
         <input type="text" id="last-name">
-        <label for="e-mail">E-mail:</label>
-        <input type="text" id="email">
-        <label for="password">Password</label>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email">
+        <label for="password">Password:</label>
         <input type="password" id="password">
-        <input type="checkbox" id="agree-terms">
-        <label for="agree-terms">Agree to
-          <a href="#">Terms & Conditions</a>
-        </label>
+        <div class="signup-form__checkbox">
+          <input type="checkbox" id="agree-terms">
+          <label for="agree-terms">Agree to
+            <a href="#">Terms & Conditions</a>
+          </label>
+        </div>
         <button type="submit" class="button">Sign Up</button>
       </form>
 

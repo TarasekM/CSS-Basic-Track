@@ -1,12 +1,13 @@
 .main-package{
   border: 5px solid #0c4422;
   border-left: 0px;
-  margin: 6rem 0;
+  margin: 2rem 0;
   width: 80vw;
   max-width: 60rem;
   min-width: 20rem;
   position: relative;
   border-radius: 0 8px 8px 0;
+  overflow: hidden;
 }
 
 .main-package__link{
@@ -47,13 +48,17 @@
 .main-package__badge{
   position: absolute;
   top: 0;
-  right: 1rem;
-  color: rgba(12,68,34,0.95);
-  background: whitesmoke;
+  right: 0;
+  margin: 0;
+  color: white;
+  background: rgb(250, 32, 56);
+  width: 12rem;
+  text-align: center;
   padding: 0.5rem;
   border-radius: 8px;
   box-shadow: 4px 4px rgb(188,188,188,0.5);
-  font-size: 1.1rem;
+  font-size: 1rem;
+  transform: rotateZ(45deg) translateX(3.5rem) translateY(-0.5rem);
 }
 
 #premium .main-package__title{
