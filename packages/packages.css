@@ -16,6 +16,10 @@
   display: block;
 }
 
+.main-package:hover{
+  animation: push-up 1 2s forwards;
+}
+
 #popular{
   background: rgba(136,255,153,0.95);
 }
@@ -83,4 +87,16 @@
 .main-package:hover{
   box-shadow: 2px 2px 8px rgba(0,0,0,0.7);
   border-color: red;
+}
+
+@keyframes push-up {
+  0% {
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-0.6rem);
+  }
+  100%{
+    transform: translateY(-0.5rem);
+  }
 }
